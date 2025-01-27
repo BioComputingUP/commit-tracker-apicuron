@@ -15,7 +15,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Push to APICURON
-        uses: ./
+        uses: BioComputingUP/commit-tracker-apicuron@main
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           REPORT_API_ENDPOINT: https://dev.apicuron.org/api/reports
