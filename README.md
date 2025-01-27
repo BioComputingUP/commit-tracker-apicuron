@@ -25,7 +25,7 @@ A GitHub Action that reports pushes to your repository to APICURON, associating 
          - uses: actions/checkout@v4
            
          - name: Submit to APICURON
-           uses: ./.github/actions/apicuron-on-commit
+           uses: BioComputingUP/commit-tracker-apicuron@main
            with:
              GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
              REPORT_API_ENDPOINT: ${{ secrets.REPORT_API_ENDPOINT }}
